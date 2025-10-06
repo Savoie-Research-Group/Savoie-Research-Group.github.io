@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Savoie Research Group</title>
+        <link rel="stylesheet" href="assets/stylesheets/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+	<html style="--main_accent: var(--gray_accent)">
+    </head>
+    <body>
+        <header class="primary-header container group">
+            <h1><a href="index.html" class="logo">Savoie Research Group |</a></h1>
+            <h3 class="tagline">Purdue University</h3>
+	    <nav class="nav primary-nav">
+	        <ul>
+	            <li><a href="index.html", id="h_home">Home</a></li><!--
+	            --><li><a href="research.html", id="h_res">Research</a></li><!--
+	            --><li><a href="people.html", id="h_peep">People</a></li><!--
+		    --><li><a href="publications.html", id="h_pub">Publications</a></li><!--
+	            --><li><a href="data+code.html", id="h_dc">Data+Code</a></li>		    
+		</ul>
+	    </nav>
+        </header>
+	<!-- Beginning of page content -->
+
+	<section class="row-alt", id="codedata_banner" >
+	    <div class="container hero">
+	        <h2>Data + Code</h2>
+	        <p>Savoie group datasets and software projects</p>
+	    </div>
+	</section>
+	<section class="row">
+		<div class="container codedata" id="yarp">
+		  <h2>Yet Another Reaction Program (YARP)</h2>
+			<h4><a href="https://github.com/Savoie-Research-Group/yarp" target="_blank">YARP</a> is a python library developed by the Savoie group to predict reaction outcomes and elucidate reaction networks (<a href="https://rdcu.be/cpDpT" target="_blank">pub1</a>, <a href="https://doi.org/10.1002/anie.202210693" target="_blank">pub2</a>, <a href="https://doi.org/10.1021/acs.jctc.2c00081" target="_blank">pub3</a>). The current github project can be found <a href="https://github.com/Savoie-Research-Group/yarp" target="_blank">here</a>. It contains an object-oriented refactoring of many of the YARP routines and objects so that users can more easily incorporate aspects of YARP into their own workflows.</h4>
+	</div>
+	</section>
+	<section class="row">
+		<div class="container codedata" id="EGAT">
+		  <h2>Edge-Featured Graph Attention (EGAT)</h2>
+			<h4><a href="https://github.com/Savoie-Research-Group/EGAT" target="_blank">EGAT</a> is a pytorch project developed by the Savoie group for implementing graph-featured attention networks relevent to molecular property prediction and reaction prediction (<a href="https://doi.org/10.26434/chemrxiv-2023-tdl2v" target="_blank">pub</a>).</h4>
+	</div>
+	</section>	
+	<section class="row">
+		<div class="container codedata" id="data-RGD1">
+		  <h2>Reaction Graph Depth (RGD) Dataset(s)</h2>
+			<h4>The <a href="https://www.nature.com/articles/s41597-023-02043-z.epdf?sharing_token=fHePclP6Jzq7_P5O0MBwH9RgN0jAjWel9jnR3ZoTv0PfTLjFBdXkALDZzYgYx2HQjzI-uwwZpjDjJUKACz8XkjtrpuT-zRrqAidqhHllzpE73U2B9amWkI0uYhoaZ46txlZBctxY5OMUPFTLju12m7lp399UaHICh0BM_G0n9fQ%3D" target="_blank">reaction graph depth dataset(s)</a> contain optimized reactant, product, and transition state geometries, intrinsic reaction coordinate calculations, activation energies, and heats of reaction calculated using the <a href="https://rdcu.be/cpDpT" target="_blank">Yet Another Reaction Program (YARP)</a> method developed by our group. The reactions in the RGD datasets are enumerate using graph-based reaction rules and truncation at a fixed number of bonds away from reactive atoms to make model reactants/products. The initial RGD dataset, RGD1, used a truncation depth of one applied to CHON-containing molecules from pubchem. Expansions to other chemical scopes, molecular sizes, and levels of theory are ongoing and will be posted here as they become ready for public use. </h4>
+
+			<h4>
+			<ol>
+			  <li><span class="blue_accent">RGD1 DFT&nbsp (RGD1_CHNO.h5)</span>&nbsp (<a href="https://figshare.com/articles/dataset/model_reaction_database/21066901/7" target="_blank">download</a>): Contains reactant, product, and transition state geometries, heat of reaction, and activation energy for 126,857 distinct reactions calculated at the B3LYP-D3/TZVP level. A total of 176,992 transition states are present due to the discovery of multiple transition state conformations for 33,032 of the reactions.
+			    <h5>
+			    <br/>NOTE: an earlier version of 1. uploaded to figshare reported activation energies for some reactions that corresponded to the reverse of the stated reaction (i.e., reactants and products were swapped). This issue has been corrected on both figshare and here.</h5></li>
+
+			  <li><span class="blue_accent">RGD1 DFT Raw Output Files&nbsp (RGD1_rawoutput.zip)</span>&nbsp (<a href="https://transfer.rcac.purdue.edu/file-manager?origin_id=1cc8429c-f64c-11ed-9bb7-c9bb788c490e&path=%2F" target="_blank">download</a>): Contains output files for the DFT-level refinements that the data in 1 are derived from.</li>
+
+			  <li><span class="blue_accent">RGD1 xTB-level IRCs&nbsp (RGD1_xTB-IRCs.zip)</span>&nbsp (<a href="https://transfer.rcac.purdue.edu/file-manager?origin_id=1cc8429c-f64c-11ed-9bb7-c9bb788c490e&path=%2F" target="_blank">download</a>): Contains the low-level IRC calculations performed at the GFN2-xTB level of theory on the RGD1 reactions. These IRCs are calculated by YARP as a feature for identifying localization to unintended transition states. The IRCs are calculated with a fixed number of steps, so there is no guarrantee that the endpoints correspond to GFN2-xTB minima. Nevertheless, these non-equilibrium geometries are potentially useful as a starting point for reactive complex optimization or machine learning.</li>
+
+			<li><span class="blue_accent">RGD1 CCSD(T)-F12 comparisons&nbsp (RGD1_CCSDpT-F12_test.csv)</span>&nbsp (<a href="https://transfer.rcac.purdue.edu/file-manager?origin_id=1cc8429c-f64c-11ed-9bb7-c9bb788c490e&path=%2F" target="_blank">download</a>): Contains a subset of reactions calculated at the CCSD(T)-F12/cc-pVDZ-F12//B3LYP-D3/TZVP level for comparison and potential use in transfer learning.</li>
+
+			<li><span class="blue_accent">RGD1 GFN2-xTB Reactant and Product&nbsp (Delta2ML_RPs.h5)</span>&nbsp (<a href="https://transfer.rcac.purdue.edu/file-manager?origin_id=1cc8429c-f64c-11ed-9bb7-c9bb788c490e&path=%2F" target="_blank">download</a>): Contains reactant, product, and transition state geometries, heat of reaction, and activation energy for 126,857 distinct reactions calculated at the GFN2-xTB level. A total of 176,992 transition states are present due to the discovery of multiple transition state conformations for 33,032 of the reactions.</li>
+
+			<li><span class="blue_accent">RGD1 GFN2-xTB Transition States&nbsp (Delta2ML_TSs.h5)</span>&nbsp (<a href="https://transfer.rcac.purdue.edu/file-manager?origin_id=1cc8429c-f64c-11ed-9bb7-c9bb788c490e&path=%2F" target="_blank">download</a>): Contains transition state geometries and activation energy for 126,857 distinct reactions calculated at the GFN2-xTB level. A total of 176,992 transition states are present due to the discovery of multiple transition state conformations for 33,032 of the reactions.</li>
+			
+			
+			</ol>
+			</h4>
+		</div>
+	</section>
+	<section class="row">
+		<div class="container codedata" id="delta2-model">
+		  <h2>∆<sup>2</sup> Model of Reaction Properties</h2>
+			<h4>This <a href="https://github.com/Savoie-Research-Group/Delta2" target="_blank">project</a> provides a pytorch implementation of a ∆<sup>2</sup>-learning model that uses GFN2-xTB level optimized geometries and corresponding single point energies to provide DFT (B3LYP-D3/TZVP) and Gaussian-4 (G4) level single point energies (<a href="https://doi.org/10.1039/D3SC02408C" target="_blank">publication</a>). This model is trained on both equilibrium structures (e.g., reactant and product) and transition states thus can be used to predict activation energies for C,H,O,N-containing systems. </h4>
+	</div>
+
+	</section>
+
+	<!-- End of page content -->
+	<footer class="primary-footer container group">
+            <small>&copy; Savoie Research Group, University of Notre Dame</small>
+	    <nav class="nav">
+	        <ul>
+	            <li><a href="index.html", id="f_home">Home</a></li><!--
+	            --><li><a href="research.html", id="f_res">Research</a></li><!--
+	            --><li><a href="people.html", id="f_peep">People</a></li><!--
+		    --><li><a href="publications.html", id="f_pub">Publications</a></li><!--
+	            --><li><a href="data+code.html", id="f_dc">Data+Code</a></li>		    
+                </ul>
+	    </nav>
+	</footer>
+
+    </body>
+</html>

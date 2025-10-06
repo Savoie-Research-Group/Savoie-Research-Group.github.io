@@ -37,6 +37,13 @@ header .subtitle {
     color: #e0e0e0;
 }
 
+.nd-affiliation {
+    margin-top: 8px;
+    color: #ae9142;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
 /* Navigation Styles */
 nav {
     background-color: #0c2340;

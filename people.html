@@ -1,251 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>People - Savoie Research Group</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Savoie Research Group</h1>
-            <p class="subtitle">Computational Chemistry & Materials Science</p>
-        </div>
-    </header>
+    <head>
+        <meta charset="utf-8">
+        <title>Savoie Research Group</title>
+        <link rel="stylesheet" href="assets/stylesheets/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+	<html style="--main_accent: var(--blue_accent)">
+    </head>
+    <body>
+        <header class="primary-header container group">
+            <h1><a href="index.html" class="logo">Savoie Research Group |</a></h1>
+            <h3 class="tagline">University of Notre Dame</h3>
+	    <nav class="nav primary-nav">
+	        <ul>
+	            <li><a href="index.html", id="h_home">Home</a></li><!--
+	            --><li><a href="research.html", id="h_res">Research</a></li><!--
+	            --><li><a href="people.html", id="h_peep">People</a></li><!--
+		    --><li><a href="publications.html", id="h_pub">Publications</a></li><!--
+	            --><li><a href="data+code.html", id="h_dc">Data+Code</a></li>		    		    
+		</ul>
+	    </nav>
+        </header>
+	<!-- Beginning of page content -->
+	<section class="row-alt", id="people_banner" >
+	    <div class="container hero">
+	        <h2>Members</h2>
+	        <p>World-class graduate students and post-docs</p>
+	    </div>
+	</section>
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="people.html" class="active">People</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+	<section class="row">
+	  <div class="grid">
 
-    <main>
-        <div class="container">
-            <section>
-                <h2>Our Team</h2>
-                
-                <h3>Principal Investigator</h3>
-                <div class="people-grid">
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/brett-savoie.jpg" alt="Dr. Brett M. Savoie" onerror="this.src='images/people/_placeholder.jpg'">
-                        <h4>Dr. Brett M. Savoie</h4>
-                        <p class="position">Principal Investigator</p>
-                        <p>Brett has decades of experience in computational methods development and simulations applied to characterizing, predicting, and designing organic molecules and materials.</p>
-                    </div>
-                </div>
+	    <!-- Members box savoie-->
+	    <section class="member" id="brett-savoie">
+	      <div class="col-2-3 res_description">
+		  <h2>Dr. Brett M. Savoie</h2>
+		  <h5>Principal Investigator</h5>
+		  <p>Brett has decades of experience in computational methods development and simulations<!--
+                 --> applied to characterizing, predicting, and designing organic molecules and materials. As a faculty member<!--
+                 --> he is focused on sustaining a world-class research team and cultivating the success of the talented researchers<!--
+                 --> that work in the group. In August 2022, Brett was promoted to the Charles Davidson Associate Professor<!--
+                 --> of Chemical Engineering. </p>
+	      </div><!--
+	      --><aside class="col-1-3">
+		  <div class="member-info">
+		    <img src="assets/images/members/brett-savoie.jpg" alt="Brett Savoie">
+		    <ul>
+			  <li>Email: bsavoie2@nd.edu</li>
+		      <li>Email: bsavoie@purdue.edu</li>
+		      <li>Phone: 765-494-4235</li>
+		    </ul>
+		  </div>
+	      </aside>
+	    </section>
 
-                <h3>Graduate Students</h3>
-                <div class="people-grid">
-                           
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/tyler-pasut.png" alt="Tyler Pasut">
-                        <h4>Tyler Pasut</h4>
-                        <p class="position">Graduate Student</p>
-                        <p>Tyler is extending the TAFFI Component Increment Theory to new chemical properties and across chemical space. Tyler joined the group in 2022.</p>
-                    </div>
-                   <div class="person-card">
-                        <img class="person-photo" src="images/people/dylan-fortney.png" alt="Dylan Fortney">
-                        <h4>Dylan Fortney</h4>
-                        <p class="position">Graduate Student</p>
-                        <p>Dylan is developing molecular dynamics models of radical polymers to understand how radical chemistry and organization affect conductivity. Dylan joined the group in 2021.</p>
-                    </div>
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/vignesh-sathyaseelan.png" alt="Vignesh Sathyaseelan" onerror="this.src='images/people/_placeholder.jpg'">
-                        <h4>Vignesh Sathyaseelan</h4>
-                        <p class="position">Graduate Student</p>
-                        <p>Vignesh is developing reactive molecular dynamics methods to simulate the decomposition mechanisms of solid electrolyte interfaces (SEIs) in batteries. Vignesh joined the group in 2021.</p>
-                    </div>
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/sai-mahit-vaddadi.png" alt="Sai Mahit Vaddadi">
-                        <h4>Sai Mahit Vaddadi</h4>
-                        <p class="position">Graduate Student</p>
-                        <p>Mahit is developing machine learning methods to accelerate the discovery of transition states for reaction prediction. Mahit joined the group in 2021.</p>
-                    </div>
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/zhichen-nian.png" alt="Zhichen Nian" onerror="this.src='images/people/_placeholder.jpg'">
-                        <h4>Zhichen Nian</h4>
-                        <p class="position">Graduate Student</p>
-                        <p>Zhichen is developing multi‑ligands and multiple active site ligands for 2D perovskites using molecular dynamics simulations. Zhichen joined the group in 2022.</p>
-                    </div>
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/begum-yuksel.png" alt="Begum Yuksel">
-                        <h4>Begum Yuksel</h4>
-                        <p class="position">Graduate Student</p>
-                        <p>Begum is working on the computational design of mixed conducting polymers. Begum joined the group in 2022.</p>
-                    </div>
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/esra-ulgey.png" alt="Esra Ulgey" onerror="this.src='images/people/_placeholder.jpg'">
-                        <h4>Esra Ulgey</h4>
-                        <p class="position">Graduate Student</p>
-                        <p>Esra is developing molecular dynamics models to simulate the electrolyte degradation in lithium‑ion batteries. Esra joined the group in 2022.</p>
-                    </div>
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/mitchell-haselow.png" alt="Mitchell Haselow">
-                        <h4>Mitchell Haselow</h4>
-                        <p class="position">Graduate Student</p>
-                        <p>Mitchell is developing an algorithm to determine reaction mechanisms present in the YARP database. Mitchell joined the group in 2022.</p>
-                    </div>
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/andrew-marquardt.png" alt="Andrew Marquardt">
-                        <h4>Andrew Marquardt</h4>
-                        <p class="position">Graduate Student</p>
-                        <p>Andrew is developing predictive methods to determine structure–function figures of merit of radical structures utilized in mixed conducting polymers. Andrew joined the group in 2022.</p>
-                    </div>
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/andrew-schofield.png" alt="Andrew Schofield" onerror="this.src='images/people/_placeholder.jpg'">
-                        <h4>Andrew Schofield</h4>
-                        <p class="position">Graduate Student</p>
-                        <p>Drew is working on developing machine learning models for reaction deduction and product determination from different analytical techniques. Drew joined the group in 2022.</p>
-                    </div>
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/yun-ke-liou.png" alt="Yun-Ke Liou" onerror="this.src='images/people/_placeholder.jpg'">
-                        <h4>Yun-Ke Liou</h4>
-                        <p class="position">Graduate Student</p>
-                        <p>Yun-Ke is developing predictive methods for discovery of organic radicals in conductive polymers. Yun-Ke joined the group in 2023.</p>
-                    </div>
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/thomas-burton.png" alt="Thomas Burton" onerror="this.src='images/people/_placeholder.jpg'">
-                        <h4>Thomas Burton</h4>
-                        <p class="position">Graduate Student</p>
-                        <p>Thomas is working on chemical reaction and reaction network modelling, including expanding on the group's previous work with the YARP and YAKS software packages, with the goal of 2‑way network exploration. Thomas joined the group in 2024.</p>
-                    </div>
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/bryan-piguave.jpg" alt="Bryan Piguave" onerror="this.src='images/people/_placeholder.jpg'">
-                        <h4>Bryan Piguave</h4>
-                        <p class="position">Graduate Student</p>
-                        <p>Bryan is developing few‑shot capable property prediction models for data‑scarce scenarios. Bryan joined the group in 2024.</p>
-                    </div>
-                </div>
+		<!-- Members box zhao li-->
+		<section class="col-1-2 member" id="zhao-li">
+			<div class="col-2-3 res_description">
+			<h2>Dr. Zhao Li</h2>
+			<h5>Postdoctoral Researcher</h5>
+			<p>Zhao is working on improving our understanding of organometallic reaction mechanisms. Zhao joined the group in 2023.</p>
+			</div><!--
+			--><aside class="col-1-3">
+			<div class="member-info">
+				<img src="assets/images/members/zhao-li.png" alt="Zhao Li">
+				<ul>
+				<li>Email: li1724@purdue.edu</li>
+				</ul>
+			</div>
+			</aside>
+		</section>
 
-                <h3>Postdoctoral Researchers</h3>
-                <div class="people-grid">
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/zhao-li.png" alt="Dr. Zhao Li" onerror="this.src='images/people/_placeholder.jpg'">
-                        <h4>Dr. Zhao Li</h4>
-                        <p class="position">Postdoctoral Researcher</p>
-                        <p>Zhao is working on improving our understanding of organometallic reaction mechanisms. Zhao joined the group in 2023.</p>
-                    </div>
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/soumi-haldar.png" alt="Dr. Soumi Haldar" onerror="this.src='images/people/_placeholder.jpg'">
-                        <h4>Dr. Soumi Haldar</h4>
-                        <p class="position">Postdoctoral Researcher</p>
-                        <p>Soumi is working on methods and software development, and simulations associated with chemical machine learning and reaction prediction projects. Soumi joined the group in 2024.</p>
-                    </div>
-                    <div class="person-card">
-                        <img class="person-photo" src="images/people/ericka-miller.png" alt="Dr. Ericka Miller" onerror="this.src='images/people/_placeholder.jpg'">
-                        <h4>Dr. Ericka Miller</h4>
-                        <p class="position">Postdoctoral Researcher</p>
-                        <p>Ericka is working on degradation chemistry reaction prediction and machine learning for property prediction. Ericka joined the group in 2024.</p>
-                    </div>
-                </div>
+		<!-- Members box haldar-->
+		<section class="col-1-2 member" id="soumi-haldar">
+			<div class="col-2-3 res_description">
+			<h2>Dr. Soumi Haldar</h2>
+			<h5>Postdoctoral Researcher</h5>
+			<p>Soumi is working on methods and software development, and simulations associated with chemical machine learning and reaction prediction projects. Soumi joined the group in 2024.</p>
+			</div><!--
+			--><aside class="col-1-3">
+			<div class="member-info">
+				<img src="assets/images/members/soumi-haldar.png" alt="Soumi Haldar">
+				<ul>
+				<li>Email: shaldar@nd.edu</li>
+				</ul>
+			</div>
+			</aside>
+		</section>
 
-                <h3>Undergraduate Researchers</h3>
-                <div class="people-grid">
-                    <div class="person-card">
-                        <h4>Undergraduate 1</h4>
-                        <p class="position">Undergraduate Researcher</p>
-                        <p>Working on machine learning projects.</p>
-                    </div>
-                    <div class="person-card">
-                        <h4>Undergraduate 2</h4>
-                        <p class="position">Undergraduate Researcher</p>
-                        <p>Working on molecular dynamics simulations.</p>
-                    </div>
-                </div>
+		<!-- Members box miller-->
+		<section class="col-1-2 member" id="ericka-miller">
+			<div class="col-2-3 res_description">
+			<h2>Dr. Ericka Miller</h2>
+			<h5>Postdoctoral Researcher</h5>
+			<p>Ericka is working on degradation chemistry reaction prediction and machine learning for property prediction. Ericka joined the group in 2024.</p>
+			</div><!--
+			--><aside class="col-1-3">
+			<div class="member-info">
+				<img src="assets/images/members/ericka-miller.png" alt="Ericka Miller">
+				<ul>
+				<li>Email: emille35@nd.edu</li>
+				</ul>
+			</div>
+			</aside>
+		</section>
 
-                <h3>Alumni</h3>
-                <div class="people-grid">
-                    <div class="person-card">
-                        <h4>Dr. Bumjoon Seo</h4>
-                        <p class="position">Postdoctoral Scholar (2018–2023)</p>
-                        <p></p>
-                    </div>
-                    <div class="person-card">
-                        <h4>Dr. Stephen Shiring</h4>
-                        <p class="position">Postdoctoral Scholar (2017–2021)</p>
-                        <p></p>
-                    </div>
-                    <div class="person-card">
-                        <h4>Dr. Hong Sun</h4>
-                        <p class="position">Postdoctoral Scholar (2020–2021)</p>
-                        <p></p>
-                    </div>
-                    <div class="person-card">
-                        <h4>Dr. Hamasullah Tahir</h4>
-                        <p class="position">Graduate Student (PhD) (2020–2024)</p>
-                        <p></p>
-                    </div>
-                    <div class="person-card">
-                        <h4>Dr. Zih-Yu Lin</h4>
-                        <p class="position">Graduate Student (PhD) (2019–2023)</p>
-                        <p></p>
-                    </div>
-                    <div class="person-card">
-                        <h4>Dr. Ying Tan</h4>
-                        <p class="position">Graduate Student (PhD) (2018–2023)</p>
-                        <p></p>
-                    </div>
-                    <div class="person-card">
-                        <h4>Dr. Qiyuan Zhao</h4>
-                        <p class="position">Graduate Student (PhD) (2018–2023)</p>
-                        <p></p>
-                    </div>
-                    <div class="person-card">
-                        <h4>Dr. Aditi Khot</h4>
-                        <p class="position">Graduate Student (PhD) (2017–2022)</p>
-                        <p></p>
-                    </div>
-                    <div class="person-card">
-                        <h4>Dr. Nicolae C. Iovanac</h4>
-                        <p class="position">Graduate Student (PhD) (2017–2021)</p>
-                        <p></p>
-                    </div>
-                    <div class="person-card">
-                        <h4>Sanjay Garimella</h4>
-                        <p class="position">Undergraduate Student (2020–2023)</p>
-                        <p></p>
-                    </div>
-                    <div class="person-card">
-                        <h4>Alex Hale</h4>
-                        <p class="position">Undergraduate Student (2019–2023)</p>
-                        <p></p>
-                    </div>
-                    <div class="person-card">
-                        <h4>Nick Casetti</h4>
-                        <p class="position">Undergraduate Student (2020–2022)</p>
-                        <p></p>
-                    </div>
-                    <div class="person-card">
-                        <h4>Ryan Brown</h4>
-                        <p class="position">Undergraduate Student (2021–2022)</p>
-                        <p></p>
-                    </div>
-                    <div class="person-card">
-                        <h4>Robert MacKnight</h4>
-                        <p class="position">Undergraduate Student (2020–2021)</p>
-                        <p></p>
-                    </div>
-                    <div class="person-card">
-                        <h4>Mackinzie Farnell</h4>
-                        <p class="position">Undergraduate Student (Summer 2019)</p>
-                        <p></p>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
+	   
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Savoie Research Group. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
+	   
+
+	    <!-- Members box gilleś-->
+	    <section class="col-1-2 member" id="dylan-fortney">
+	      <div class="col-2-3 res_description">
+		  <h2>Dylan Fortney</h2>
+		  <h5>Graduate Student</h5>
+		  <p>Dylan is developing molecular dynamics models of radical polymers to understand how radical chemistry and organization affect conductivity. Dylan joined the group in 2021.
+
+			.</P>
+	      </div><!--
+	      --><aside class="col-1-3">
+		  <div class="member-info">
+		    <img src="assets/images/members/dylan-fortney.png" alt="Dylan Fortney">
+		    <ul>
+		      <li>Email: dgilley@purdue.edu</li>
+		    </ul>
+		  </div>
+	      </aside>
+	    </section>
+
+
+	
+	    <!-- Members box pasut-->
+	    <section class="col-1-2 member" id="tyler-pasut">
+			<div class="col-2-3 res_description">
+			<h2>Tyler Pasut</h2>
+			<h5>Graduate Student</h5>
+			<p>Tyler is extending the TAFFI Component Increment Theory to new chemical properties and across chemical space. Tyler joined the group in 2022</p>
+			</div><!--
+			--><aside class="col-1-3">
+			<div class="member-info">
+			  <img src="assets/images/members/tyler-pasut.png" alt="Tyler Pasut">
+			  <ul>
+				<li>Email: tpasut@purdue.edu</li>
+			  </ul>
+			</div>
+			</aside>
+		  </section>
+
+     
+
+
+      
+
+      <!-- Members box sathyaseelan-->
+	    <section class="col-1-2 member" id="vignesh-sathyaseelan">
+	      <div class="col-2-3 res_description">
+		  <h2>Vignesh Sathyaseelan</h2>
+		  <h5>Graduate Student</h5>
+		  <p>Vignesh is developing reactive molecular dynamics methods to simulate the decomposition<!--
+      --> mechanisms of solid electrolyte interfaces (SEIs) in batteries. Vignesh joined the group in 2021.</p>
+	      </div><!--
+	      --><aside class="col-1-3">
+		  <div class="member-info">
+		    <img src="assets/images/members/vignesh-sathyaseelan.png" alt="Vignesh Sathyaseelan">
+		    <ul>
+		      <li>Email: vsathyas@purdue.edu</li>
+		    </ul>
+		  </div>
+	      </aside>
+	    </section>
+
+      <!-- Members box vaddadi-->
+	    <section class="col-1-2 member" id="sai-mahit-vaddadi">
+	      <div class="col-2-3 res_description">
+		  <h2>Sai Mahit Vaddadi</h2>
+		  <h5>Graduate Student</h5>
+		  <p>Mahit is developing machine learning methods to accelerate the discovery of<!--
+      --> transition states for reaction prediction. Mahit joined the group in 2021.</p>
+	      </div><!--
+	      --><aside class="col-1-3">
+		  <div class="member-info">
+		    <img src="assets/images/members/sai-mahit-vaddadi.png" alt="Sai Mahit Vaddadi">
+		    <ul>
+		      <li>Email: svaddadi@purdue.edu</li>
+		    </ul>
+		  </div>
+	      </aside>
+	    </section>
+
+
+		<!-- Members box nian-->
+		<section class="col-1-2 member" id="zhichen-nian">
+		<div class="col-2-3 res_description">
+		<h2>Zhichen Nian</h2>
+		<h5>Graduate Student</h5>
+		<p>Zhichen is developing multi-ligands and multiple active site ligands for 2D perovskites using 
+			molecular dynamics simulations. Zhichen joined the group in 2022.</p>
+		</div><!--
+		--><aside class="col-1-3">
+		<div class="member-info">
+			<img src="assets/images/members/zhichen-nian.png" alt="Zhichen Nian">
+			<ul>
+			<li>Email: nianz@purdue.edu</li>
+			</ul>
+		</div>
+		</aside>
+		</section>
+
+		<!-- Members box yuksel-->
+		<section class="col-1-2 member" id="begum-yuksel">
+			<div class="col-2-3 res_description">
+			<h2>Begum Yuksel</h2>
+			<h5>Graduate Student</h5>
+			<p>Begum is working on the computational design of mixed conducting polymers.
+				Begum joined the group in 2022.</p>
+			</div><!--
+			--><aside class="col-1-3">
+			<div class="member-info">
+				<img src="assets/images/members/begum-yuksel.png" alt="Begum Yuksel">
+				<ul>
+				<li>Email: yukselb@purdue.edu</li>
+				</ul>
+			</div>
+			</aside>
+			</section>
+
+		<!-- Members box ulgey-->
+		<section class="col-1-2 member" id="esra-ulgey">
+			<div class="col-2-3 res_description">
+			<h2>Esra Ulgey</h2>
+			<h5>Graduate Student</h5>
+			<p>Esra is developing molecular dynamics models to simulate the electrolyte degradation in lithium-ion batteries.
+				Esra joined the group in 2022.</p>
+			</div><!--
+			--><aside class="col-1-3">
+			<div class="member-info">
+				<img src="assets/images/members/esra-ulgey.png" alt="Esra Ulgey">
+				<ul>
+				<li>Email: eulgey@purdue.edu</li>
+				</ul>
+			</div>
+			</aside>
+			</section>
+
+		
+			<!-- Members box haselow-->
+		<section class="col-1-2 member" id="mitchell-haselow">
+			<div class="col-2-3 res_description">
+			<h2>Mitchell Haselow</h2>
+			<h5>Graduate Student</h5>
+			<p>Mitchell is developing an algorithm to determine reaction mechanisms present in the YARP database. 
+				Mitchell joined the group in 2022.</p>
+			</div><!--
+			--><aside class="col-1-3">
+			<div class="member-info">
+				<img src="assets/images/members/mitchell-haselow.png" alt="Mitchell Haselow">
+				<ul>
+				<li>Email: mhaselow@purdue.edu</li>
+				</ul>
+			</div>
+			</aside>
+			</section>
+
+		
+		<!-- Members box marquardt-->
+		<section class="col-1-2 member" id="andrew-marquardt">
+			<div class="col-2-3 res_description">
+			<h2>Andrew Marquardt</h2>
+			<h5>Graduate Student</h5>
+			<p>Andrew is developing predictive methods to determine structure-function figures of merit of radical structures utilized in mixed conducting polymers. 
+				Andrew joined the group in 2022.</p>
+			</div><!--
+			--><aside class="col-1-3">
+			<div class="member-info">
+				<img src="assets/images/members/andrew-marquardt.png" alt="Andrew Marquardt">
+				<ul>
+				<li>Email: marquara@purdue.edu</li>
+				</ul>
+			</div>
+			</aside>
+			</section>
+
+		<!-- Members box schofield-->
+		<section class="col-1-2 member" id="andrew-schofield">
+			<div class="col-2-3 res_description">
+			<h2>Andrew Schofield</h2>
+			<h5>Graduate Student</h5>
+			<p>Drew is working on developing machine learning models for reaction deduction and product determination from different analytical techniques. 
+				Drew joined the group in 2022.</p>
+			</div><!--
+			--><aside class="col-1-3">
+			<div class="member-info">
+				<img src="assets/images/members/andrew-schofield.png" alt="Andrew Schofield">
+				<ul>
+				<li>Email: schofiea@purdue.edu</li>
+				</ul>
+			</div>
+			</aside>
+			</section>
+
+		<!-- Members box liou-->
+		<section class="col-1-2 member" id="yun-ke-liou">
+			<div class="col-2-3 res_description">
+			<h2>Yun-Ke Liou</h2>
+			<h5>Graduate Student</h5>
+			<p>Yun-Ke is developing predictive methods for discovery of organic radicals in conductive polymers. Yun-Ke joined the group in 2023.</p>
+			</div><!--
+			--><aside class="col-1-3">
+			<div class="member-info">
+				<img src="assets/images/members/yun-ke-liou.png" alt="Yun-Ke Liou">
+				<ul>
+				<li>Email: liou2@purdue.edu</li>
+				</ul>
+			</div>
+			</aside>
+		</section>
+
+		<!-- Members box burton-->
+		<section class="col-1-2 member" id="thomas-burton">
+			<div class="col-2-3 res_description">
+			<h2>Thomas Burton</h2>
+			<h5>Graduate Student</h5>
+			<p>Thomas is working on chemical reaction and reaction network modelling, including expanding on the group's previous work with the YARP and YAKS software packages, with the goal of 2-way network exploration. Thomas joined the group in 2024.</p>
+			</div><!--
+			--><aside class="col-1-3">
+			<div class="member-info">
+				<img src="assets/images/members/thomas-burton.jpg" alt="Thomas Burton">
+				<ul>
+				<li>Email: tburton2@nd.edu</li>
+				</ul>
+			</div>
+			</aside>
+		</section>
+
+
+		<!-- Members box piguave-->
+		<section class="col-1-2 member" id="bryan-piguave">
+			<div class="col-2-3 res_description">
+			<h2>Bryan Piguave</h2>
+			<h5>Graduate Student</h5>
+			<p>Bryan is developing few-shot capable property prediction models for data-scarce scenarios. Bryan joined the group in 2024.</p>
+			</div><!--
+			--><aside class="col-1-3">
+			<div class="member-info">
+				<img src="assets/images/members/bryan-piguave.jpg" alt="Bryan Piguave">
+				<ul>
+				<li>Email: bpiguave@nd.edu</li>
+				</ul>
+			</div>
+			</aside>
+		</section>
+
+
+      <section class="row">
+      <div class="container publications" id="alumni_list">
+        <h2>Alumni</h2>
+        <ol>
+			<li>Dr. Bumjoon Seo [Postdoctoral Scholar], 2018-2023</li>
+			<li>Dr. Stephen Shiring [Postdoctoral Scholar], 2017-2021, The Energy Authority</li>
+			<li>Dr. Hong Sun [Postdoctoral Scholar], 2020-2021, Lawerence Livermore National Laboratory</li>
+			<li>Dr. Hamasullah Tahir [Graduate Student (PhD)], 2020-2024, Intel</li>
+			<li>Dr. Zih-Yu Lin [Graduate Student (PhD)], 2019-2023, Oli Systems</li>
+		  <li>Dr. Ying Tan [Graduate Student (PhD)], 2018-2023, University of Michigan Postdoc</li>
+		  <li>Dr. Qiyuan Zhao [Graduate Student (PhD)], 2018-2023, University of Michigan Postdoc</li>
+		  <li>Dr. Aditi Khot [Graduate Student (PhD)], 2017-2022, The Energy Authority</li>
+          <li>Dr. Nicolae C. Iovanac [Graduate Student (PhD)], 2017-2021, Dupont</li>
+		  <li>Sanjay Garimella [Undergraduate Student], 2020-2023, MIT PhD</li>
+		  <li>Alex Hale [Undergraduate Student], 2019-2023, Eastman</li>
+		  <li>Nick Casetti [Undergraduate Student], 2020-2022, MIT PhD</li>
+		  <li>Ryan Brown [Undergraduate Student], 2021-2022, Purdue MS (CS)</li>
+		  <li>Robert MacKnight [Undergraduate Student], 2020-2021, Carnegie Mellon PhD</li>
+		  <li>Mackinzie Farnell [Undergraduate Student], Summer 2019, UC Berkeley PhD</li>
+        </ol>
+      </div>
+      </section>
+
+	  <!-- End of members -->
+	  </div>
+	</section>
+
+	<!-- End of page content -->
+	<footer class="primary-footer container group">
+            <small>&copy; Savoie Research Group, University of Notre Dame</small>
+	    <nav class="nav">
+	        <ul>
+	            <li><a href="index.html">Home</a></li><!--
+	            --><li><a href="research.html">Research</a></li><!--
+	            --><li><a href="people.html">People</a></li><!--
+		    --><li><a href="publications.html", id="f_pub">Publications</a></li><!--
+	            --><li><a href="data+code.html", id="f_dc">Data+Code</a></li>		    
+                </ul>
+	    </nav>
+	</footer>
+
+    </body>
 </html>

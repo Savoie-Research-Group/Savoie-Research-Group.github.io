@@ -1,76 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Savoie Research Group</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Savoie Research Group</h1>
-            <p class="subtitle">Computational Chemistry & Materials Science</p>
-        </div>
-    </header>
+    <head>
+        <meta charset="utf-8">
+        <title>Savoie Research Group</title>
+        <link rel="stylesheet" href="assets/stylesheets/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+    </head>
+    <body>
+        <header class="primary-header container group">
+            <h1><a href="index.html" class="logo">Savoie Research Group |</a></h1>
+            <h3 class="tagline">University of Notre Dame</h3>
+	    <nav class="nav primary-nav">
+	        <ul>
+	            <li><a href="index.html", id="h_home">Home</a></li><!--
+	            --><li><a href="research.html", id="h_res">Research</a></li><!--
+	            --><li><a href="people.html", id="h_peep">People</a></li><!--
+		    --><li><a href="publications.html", id="h_pub">Publications</a></li><!--
+	            --><li><a href="data+code.html", id="h_dc">Data+Code</a></li>		    
+		</ul>
+	    </nav>
+        </header>
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="people.html">People</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+	<!-- Beginning of page content -->
+	<section class="row-alt", id="home_banner">
+	    <div class="container hero">
+	        <h2>Materials Discovery and Characterization</h2>
+	        <p>using machine-learning and high-throughput simulations</p>
+	    </div>
+	</section>
+	<section class="row">
+	    <div class="teaser-grid">
+		<section class="teaser col-1-4", id="research_box">
+		    <h3>Research</h3>
+		    <p>More details on methods developments and applications in the group.</p>
+		    <a href="research.html" class="btn btn-alt">Research</a>
+		</section><!--
+		--><section class="teaser col-1-4", id="people_box">
+		    <h3>People</h3>
+		    <p>Please check out people page for a description of our team.</p>
+		    <a href="people.html" class="btn btn-alt">People</a>
+		</section><!--
+		--><section class="teaser col-1-4", id="pub_box">
+		    <h3>Publications</h3>
+		    <p>Check out our publications page for a list of recent publications.</p>
+		    <a href="publications.html" class="btn btn-alt">Publications</a>
+		</section><!--
+		--><section class="teaser col-1-4", id="dc_box">
+		    <h3>Data+Code</h3>
+		    <p>Check out our open-source datasets and software projects.</p>
+		    <a href="data+code.html" class="btn btn-alt">Data+Code</a>
+		</section>
+		
+            </div>
+	</section>
 
-    <main>
-        <div class="container">
-            <section class="hero">
-                <h2>Welcome to the Savoie Research Group</h2>
-                <p>We are a computational chemistry research group focused on developing and applying computational methods to understand and design materials for energy, catalysis, and sustainability applications.</p>
-            </section>
+	<!-- Beginning of news items -->
+        <div class="row-blank", align="center"><h1><strong> Group News </strong></h1> </div>
 
-            <section class="about">
-                <h3>About Our Research</h3>
-                <p>Our research combines quantum chemistry, molecular dynamics, and machine learning to tackle fundamental challenges in chemistry and materials science. We develop new computational tools and apply them to problems ranging from reaction mechanism discovery to property prediction.</p>
-            </section>
+        <section class="news-grid">
+			
+		<div class="news-item" >
+			<img src="assets/images/news/advanced_materials.png" alt="advanced materials logo" class="newsimage" background-color="black"></a>
+			<p class="newstext-left-upper" top="200px"> Hamas demonstrates superior magnetoresistance of high-spin donor-acceptor conjugated polymers in <a href="https://doi.org/10.1002/adma.202306389">Advanced Materials</a>.</p>
+				</div>
 
-            <section class="pi-info">
-                <h3>Principal Investigator</h3>
-                <div class="pi-card">
-                    <h4>Brett Savoie</h4>
-                    <p>Professor</p>
-                    <p>Our research is organized around the problems that you will find below. Our expertise lies in using computational methods to design and characterize organic molecules, materials, and reactions. A small team of students and postdocs works on each problem and the problems cycle over time as we generate new ideas, perceive a need, or conclude our studies. We use an array of methodologies and actively extend or invent new approaches as required by each problem. Combined with some of the best graduate students and postdocs on the planet, these ingredients create an extremely productive, cross-cutting, and creative research atmosphere. If you are interested in any of these problems, would like to collaborate with the group, or are interested in joining the group, please reach out to Brett.                       .</p>
-                </div>
-            </section>
+			<div class="news-item" >
+			<img src="assets/images/news/pnas.png" alt="PNAS logo" class="newsimage" background-color="black"></a>
+			<p class="newstext-left-lower" top="200px"> Qiyuan details cheap and deep exploration of glucose pyrolysis reaction network in <a href="https://doi.org/10.1073/pnas.2305884120" target="_blank">PNAS</a> </p>
+				</div>
 
-            <section class="research-highlights">
-                <h3>Research Areas</h3>
-                <div class="research-grid">
-                    <div class="research-card">
-                        <h4>Computational Chemistry</h4>
-                        <p>Quantum mechanical calculations and molecular simulations</p>
-                    </div>
-                    <div class="research-card">
-                        <h4>Machine Learning</h4>
-                        <p>Development of ML models for chemistry applications</p>
-                    </div>
-                    <div class="research-card">
-                        <h4>Materials Design</h4>
-                        <p>Discovery and optimization of functional materials</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
+		<div class="news-item" >
+				<img src="assets/images/news/defense_lin.png" alt="lin defense" class="newsimage"></a>
+			<p class="newstext-left-lower" top="-100px"> 'Lin'credible thesis defense! 🐆 Congratuations Dr. Zih-Yu Lin.</a> </p>
+			</div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Savoie Research Group. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
+		<div class="news-item">
+			<img src="assets/images/news/JCP_logo.png" alt="JPC logo" class="newsimage"
+				background-color="black"></a>
+			<p class="newstext-right-lower" top="200px"> Aditi bridges the gap between regular ML and physics based CGMD potentials through Δ-learning in <a href="https://doi.org/10.1063/5.0157742" target="_blank">JCP</a></p>
+		</div>
+
+		<div class="news-item" >
+			<img src="assets/images/news/rsc_chem_sci.png" alt="RSC Chemical Science logo" class="newsimage" background-color="black"></a>
+			<p class="newstext-right-lower" top="200px"> Qiyuan improves reaction activation barrier prediction via Δ<sup>2</sup>-learning in <a href="https://doi.org/10.1039/D3SC02408C" target="_blank">RSC Chem Sci.</a> </p>
+				</div>
+
+		<div class="news-item" >
+			<img src="assets/images/news/angew_chem.png" alt="angewandte chemie logo" class="newsimage" background-color="black"></a>
+			<p class="newstext-left-lower" top="200px"> Lin and Stephen expand the space of stable 2-d optoelectronic perovskites using MD + ML in <a href="https://doi.org/10.1002/anie.202305298" target="_blank">Angewandte Chemie.</a> </p>
+				</div>
+
+		<div class="news-item" >
+			<a href="https://doi.org/10.1021/acs.nanolett.3c00978" target="_blank">
+				<img src="assets/images/news/acs_nano_letters.png" alt="anl logo" class="newsimage"></a>
+			<p class="newstext-left-upper" top="-100px">Ying demonstrates ehanced charge transport in nonconjugated materials through incorporation of TEMPO radicals in <a href="https://doi.org/10.1021/acs.nanolett.3c00978" target="_blank"> ACS Nano Lett. </a> </p>
+			</div>
+
+		<div class="news-item" >
+		<a href="https://doi.org/10.1021/acsmacrolett.3c00105" target="_blank">
+			<img src="assets/images/news/acs_macro_letters.png" alt="aml logo" class="newsimage"></a>
+		<p class="newstext-right-lower" top="-100px">Ying presents a detailed QM study on bridging the monomer - polyer gap in  <a href="https://doi.org/10.1021/acsmacrolett.3c00105" target="_blank"> ACS Macro Lett. </a> </p>
+		</div>
+
+		<div class="news-item">
+			<img src="assets/images/news/JCP_logo.png" alt="JPC logo" class="newsimage"
+				background-color="black"></a>
+			<p class="newstext-left-upper" top="200px"> Jack presents a major breakthrough towards the unification of molecular mobility in Arrhenian and super-cooled regions in <a href="https://doi.org/10.1063/5.0145794" target="_blank">JCP</a></p>
+		</div>
+
+		<div class="news-item">
+			<img src="assets/images/news/defense_ying.png" alt="congratulations dr. ying tan" class="newsimage"
+				background-color="black"></a>
+			<p class="newstext-left-lower" top="100px"> Congratulations Dr. Ying Tan. What a 'radical' defense 🎊</p>
+		</div>
+
+		<div class="news-item">
+			<img src="assets/images/news/defense_qiyuan.png" alt="congratulations dr. qiyuan zhao" class="newsimage"
+				background-color="black"></a>
+			<p class="newstext-left-lower" top="100px"> Qiyuan is now Dr. Qiyuan Zhao. XP++. Congratulations 🎉</p>
+		</div>
+
+		<div class="news-item">
+			<img src="assets/images/news/nature-comms.png" alt="nature communications logo" class="newsimage"
+				background-color="black"></a>
+			<p class="newstext-left-upper" top="100px"> Bumjoon (+ Diao group) present chain engineering to control rare cooperative transitions for organic semiconductors in <a href="https://rdcu.be/c77eq" target="_blank">Nature Commun.</a> </p>
+		</div>
+
+		<div class="news-item">
+			<img src="assets/images/news/nat-sci-data-2.png" alt="JACS" class="newsimage" background-color="black"></a>
+			<p class="newstext-left-lower" top="10px"> Largest and most chemically diverse open-source transition state dataset to date presented in <a href="https://rdcu.be/c7Z2p" target="_blank">Nature Sci. Data</a></p>
+		</div>
+
+	<div class="news-item">
+		<img src="assets/images/news/JACS.png" alt="JACS" class="newsimage" background-color="black"></a>
+		<p class="newstext-left-upper" top="10px"> Exploration of prebiotic chemical pathways from water and hydrogen cyanide appears in  <a href="https://doi.org/10.1021/jacs.2c11857" target="_blank">JACS</a></p>
+	</div>
+
+	<div class="news-item" >
+		<a href="https://pubs.acs.org/doi/abs/10.1021/acs.jcim.0c00092" target="_blank">
+			<img src="assets/images/news/jcim_logo.png" alt="jcim logo" class="newsimage"></a>
+		<p class="newstext-right-lower" top="-100px">Bumjoon presents rational parametrization of transferable and accurate MD force fields in <a href=" https://doi.org/10.1021/acs.jcim.2c01163" target="_blank"> JCIM. </a> </p>
+		</div>
+
+	<div class="news-item" >
+		<img src="assets/images/news/nature-comms.png" alt="nature communications logo" class="newsimage" background-color="black"></a>
+		<p class="newstext-right-lower" top="100px"> Lin (+ Dou group) improve perovskite LEDs via phase disproportionation suppression in <a href="https://doi.org/10.1038/s41467-023-36118-7" target="_blank">Nature Commun.</a> </p>
+			</div>
+
+	<div class="news-item" >
+		<img src="assets/images/news/angew_chem.png" alt="angewandte chemie logo" class="newsimage" background-color="black"></a>
+		<p class="newstext-left-lower" top="200px"> Qiyuan's work on YARP 2.0 with major improvements to speed and accuracy appears in <a href="https://doi.org/10.1002/anie.202210693" target="_blank">Angewandte Chemie.</a> </p>
+			</div>
+
+	<div class="news-item" >
+		<img src="assets/images/news/nature-comms.png" alt="nature communications logo" class="newsimage" background-color="black"></a>
+		<p class="newstext-right-lower" top="200px"> Qiyuan presents the extention of YARP to heterogeneous catalytic systems in <a href="https://doi.org/10.1038/s41467-022-32514-7" target="_blank">Nature Commun.</a> </p>
+			</div>
+
+	<div class="news-item">
+		<img src="assets/images/news/defense_aditi.png" alt="congratulations dr. aditi khot" class="newsimage"
+			background-color="black"></a>
+		<p class="newstext-right-lower" bottom="10px"> Hello world, welcome Dr. Aditi Khot. Congratulations 🥳</p>
+	</div>
+
+      <div class="news-item" >
+       <img src="assets/images/news/JPC_logo.png" alt="jpc logo" class="newsimage" background-color="black"></a>
+       <p class="newstext-right-upper" top="100px">Nick extends his chemical autoencoder work with active learning for inverse molecular design in <a href="http://doi.org/10.1021/acs.jpca.1c08191" target="_blank"> JPC </a> </p>
+           </div>
+
+     <div class="news-item" >
+      <img src="assets/images/news/pol-sci-1.png" alt="J. Polym. Sci." class="newsimage" background-color="black"></a>
+      <p class="newstext-left-lower" top="100px"> Aditi's pioneering study on side-chain design for mixed conducting polymers appears in <a href="http://doi.org/10.1002/pol.20210773" target="_blank">J. Polym. Sci.</a></p>
+          </div>
+
+     <div class="news-item" >
+      <img src="assets/images/news/JACS.png" alt="JACS" class="newsimage" background-color="black"></a>
+      <p class="newstext-left-upper" top="100px"> Ying's perspective on the current state and future outlook of open-shell macromolecules appears in <a href="https://pubs.acs.org/doi/10.1021/jacs.1c09815" target="_blank">JACS</a></p>
+          </div>
+
+	   <div class="news-item" >
+	    <img src="assets/images/news/nature_cs.png" alt="nature_cs" class="newsimage" background-color="black"></a>
+	    <p class="newstext-left-upper" top="100px"> Yet Another Reaction Program (YARP) appears with major speedups in <a href="https://rdcu.be/cpDpT" target="_blank">Nature Computational Science</a></p>
+          </div>
+	   <div class="news-item" >
+	    <img src="assets/images/news/JACS.png" alt="JACS" class="newsimage" background-color="black"></a>
+	    <p class="newstext-left-upper" top="100px"> What makes a good radical for charge transport? Ying's answer appears in <a href="https://pubs.acs.org/doi/abs/10.1021/jacs.1c02571" target="_blank">JACS</a></p>
+          </div>
+	   <div class="news-item" >
+	    <img src="assets/images/news/ONR.png" alt="ONR" class="newsimage" background-color="black"></a>
+	    <p class="newstext-left-lower" top="100px"> Savoie wins Office of Naval Research (ONR) Young Investigator <a href="https://engineering.purdue.edu/ChE/news/2021/2-faculty-onr-yip" target="_blank">Award</a></p>
+          </div>
+	   <div class="news-item" >
+	    <img src="assets/images/news/macromolecules.png" alt="macromolecules" class="newsimage" background-color="black"></a>
+	    <p class="newstext-left-lower" top="100px"> Aditi's generic coarse-grained model of mixed conducting polymers appears in <a href="https://pubs.acs.org/doi/abs/10.1021/acs.macromol.1c00219" target="_blank">Macromolecules</a></p>
+          </div>
+	   <div class="news-item" >
+	    <img src="assets/images/news/nature_nano.png" alt="nature_nano" class="newsimage" background-color="black"></a>
+	    <p class="newstext-right-lower" top="100px"> Halide diffusion study in collaboration with the Dou group featured in <a href="https://www.nature.com/articles/s41586-020-2219-7" target="_blank">Nature Nanotechnology</a></p>
+          </div>
+	  <div class="news-item" >
+	    <img src="assets/images/news/muri.png" alt="MURI" class="newsimage" background-color="black"></a>
+	    <p class="newstext-right-upper" top="100px"> Department of Defense awards Savoie-led team with <a href="https://engineering.purdue.edu/ChE/news/2021/dr-brett-savoie-awarded-multidisciplinary-university-research-initiative-funding-from-department-of-defense" target="_blank">MURI Funding</a> for research into degredation pathways</p>
+          </div>
+	  <div class="news-item" >
+	    <img src="assets/images/news/nsf_career.png" alt="nsf_career" class="newsimage" background-color="black"></a>
+	    <p class="newstext-right-lower" top="100px"> Savoie wins funding from <a href="https://engineering.purdue.edu/ChE/news/2021/dr-brett-savoie-receives-national-science-foundation-career-funding-for-battery-research" target="_blank">National Science Foundation</a> to study decomposition of battery electrolytes</p>
+          </div>
+	  <div class="news-item" >
+	    <img src="assets/images/news/dreyfus_alt.png" alt="Dreyfus2" class="newsimage" background-color="black"></a>
+	    <p class="newstext-left-upper" top="100px"> Dreyfus Foundation honors Savoie with inaugural <a href="https://www.dreyfus.org/dreyfus-program-for-machine-learning-in-the-chemical-sciences-engineering-2/" target="_blank">Machine Learning Award</a></p>
+          </div>
+	  <div class="news-item" >
+	    <img src="assets/images/news/nature_logo.png" alt="Nature Logo" class="newsimage" background-color="white"></a>
+	    <p class="newstext-left-lower"> Two-dimensional halide perovskite heterostructures in  <a href="https://www.nature.com/articles/s41586-020-2219-7" target="_blank"> Nature </a> </p>
+	  </div>
+	  <div class="news-item" >
+	    <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpca.0c00042" target="_blank">
+            <img src="assets/images/news/JPC_logo.png" alt="jpc logo" class="newsimage"></a>
+	    <p class="newstext-right-upper" top="-100px"> Linear autoencoders for improved transfer learning in  <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jpca.0c00042" target="_blank"> JPC </a> </p>
+	  </div>
+	  <div class="news-item" >
+	    <a href="https://pubs.acs.org/doi/abs/10.1021/acsmacrolett.0c00037" target="_blank">
+            <img src="assets/images/news/acs_macro_letters.png" alt="aml logo" class="newsimage"></a>
+	    <p class="newstext-right-lower" top="-100px">Advances and Opportunities for Mixed Ion and Charge Conducting Polymers in  <a href="https://pubs.acs.org/doi/abs/10.1021/acsmacrolett.0c00037" target="_blank"> ACS Macro Lett. </a> </p>
+	  </div>
+	  <div class="news-item" >
+	    <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jcim.0c00092" target="_blank">
+            <img src="assets/images/news/jcim_logo.png" alt="jcim logo" class="newsimage"></a>
+	    <p class="newstext-right-lower" top="-100px">Component Increment Theory for Predicting Enthalpy of Formation in  <a href="https://pubs.acs.org/doi/abs/10.1021/acs.jcim.0c00092" target="_blank"> JCIM. </a> </p>
+	  </div>
+	  <div class="news-item" >
+	    <img src="assets/images/news/hale_award.png" alt="Hale Award" class="newsimage" background-color="white"></a>
+	    <p class="newstext-left-lower"> Alex Hale wins award for <a href="https://www.purdue.edu/undergrad-research/conferences/spring/presentations-2020/index.php" target="_blank"> Best Undergraduate Presentation </a> </p>
+          </div>
+	  <div class="news-item" >
+	    <img src="assets/images/news/nature_chemistry_invert.png" alt="Nature Chem" class="newsimage" background-color="white"></a>
+	    <p class="newstext-right-upper"> Hybrid Perovskite Quantum Wells in <a href="https://www.nature.com/articles/s41557-019-0354-2" target="_blank"> Nature Chemistry </a> </p>
+          </div>
+	  <div class="news-item" >
+	    <img src="assets/images/news/jack_centennial_2019.jpg" alt="Centennial Award" class="newsimage" background-color="white"></a>
+	    <p class="newstext-left-lower"> Jack snags Centennial Award for Outstanding First-Year Graduate Student</p>
+          </div>
+	  <div class="news-item" >
+	    <img src="assets/images/news/acs-prf.png" alt="PetroResearch" class="newsimage" background-color="white"></a>
+	    <p class="newstext-left-upper"> Savoie awarded <a href="https://www.acs.org/content/acs/en/funding-and-awards/grants/prf/about.html" target="_blank">ACS Petroleum Research Funding</a> for work in plastic semiconductors </p>
+          </div>
+          <div class="news-item" >
+	    <a href="https://engineering.purdue.edu/ChE/news/2019/che-faculty-dr-brett-savoie-selected-for-orau-ralph-e-powe-award" target="_blank">
+            <img src="assets/images/news/ORAU.png" alt="ORAU Logo" class="newsimage" background-color="white"></a>
+	    <p class="newstext-right-upper"> Savoie wins <a href="https://engineering.purdue.edu/ChE/news/2019/che-faculty-dr-brett-savoie-selected-for-orau-ralph-e-powe-award" target="_blank">ORAU Ralph E. Powe Award</a></p>
+          </div>
+          <div class="news-item" >
+	    <img src="assets/images/news/ND_Purdue_SMS_poster.jpg" alt="Poster Award" class="newsimage" background-color="white"></a>
+	    <p class="newstext-right-lower"> Aditi and Jack win top-poster prizes at ND-Purdue Soft Matter Symposium</p>
+          </div>
+	  <div class="news-item" >
+	    <a href="https://pubs.acs.org/doi/10.1021/acs.jpca.9b01398" target="_blank">
+            <img src="assets/images/news/JPC_logo.png" alt="jpc logo" class="newsimage"></a>
+	    <p class="newstext-left-lower" top="-100px"> Transfer learning for data-scarce property prediction in <a href="https://pubs.acs.org/doi/10.1021/acs.jpca.9b01398" target="_blank"> JPC </a> </p>
+	  </div>
+	  <div class="news-item" >
+	    <a href="http://science.sciencemag.org/content/362/6419/1131" target="_blank">
+            <img src="assets/images/news/science_120718.png" alt="science cover" class="newsimage"></a>
+	    <p class="newstext-left-upper" top="-100px"> High-temperature semi-conducting polymers in <a href="http://science.sciencemag.org/content/362/6419/1131" target="_blank"> Science </a> </p>
+	  </div>
+	  <div class="news-item" >
+	    <a href="https://cen.acs.org/synthesis/CENs-molecules-year-2018/96/i49" target="_blank">
+            <img src="assets/images/news/cen.png" alt="cen logo" class="newsimage"></a>
+	    <p class="newstext-right-lower"> PTEO radical polymer named a "Molecule of the Year" <a href="https://cen.acs.org/synthesis/CENs-molecules-year-2018/96/i49" target="_blank">C&EN</a></p>
+	  </div>
+          <div class="news-item" >
+	    <a href="http://science.sciencemag.org/content/362/6419/1144" target="_blank">
+            <img src="assets/images/news/science_120718.png" alt="science cover" class="newsimage" background-color="white"></a>
+	    <p class="newstext-left-lower"> Fluoride battery breakthrough published in <a href="http://science.sciencemag.org/content/362/6419/1144" target="_blank">Science</a></p>
+          </div>
+          <div class="news-item" >
+	    <a href="https://one.npr.org/?sharedMediaId=672945784:672945789" target="_blank">
+            <img src="assets/images/news/npr.png" alt="NPR Logo" class="newsimage" background-color="white"></a>
+	    <p class="newstext-left-lower"> <a href="https://one.npr.org/?sharedMediaId=672945784:672945789" target="_blank">NPR</a> highlights Mi-Bio and PTEO work </p>
+          </div>
+	  <div class="news-item" >
+	    <a href="http://science.sciencemag.org/cgi/content/full/359/6382/1391?ijkey=QtM8YW.MqQqp2&keytype=ref&siteid=sci" target="_blank">
+            <img src="assets/images/news/Sciencemag.jpg" alt="Science Logo" class="newsimage"></a>
+	    <p class="newstext-left-lower" top="-100px"> Boudouris and Savoie publish on radical polymer breakthrough in <a href="http://science.sciencemag.org/cgi/content/full/359/6382/1391?ijkey=QtM8YW.MqQqp2&keytype=ref&siteid=sci" target="_blank"> Science </a> </p>
+	  </div>
+          <div class="news-item" >
+	    <a href="https://engineering.purdue.edu/Engr/AboutUs/News/Spotlights/2018/engineering-graduate-students-win-nsf-fellowships" target="_blank">
+            <img src="assets/images/news/GRFP_logo.png" alt="GRFP Logo" class="newsimage" background-color="white"></a>
+	    <p class="newstext-right-upper"> Graduate student Nicolae Iovanac wins <a href="https://engineering.purdue.edu/Engr/AboutUs/News/Spotlights/2018/engineering-graduate-students-win-nsf-fellowships" target="_blank">NSF-GRFP </a></p>
+          </div>
+        </section>
+
+	<!-- End of page content -->
+	<footer class="primary-footer container group">
+            <small>&copy; Savoie Research Group, University of Notre Dame</small>
+	    <nav class="nav">
+	        <ul>
+	            <li><a href="index.html", id="f_home">Home</a></li><!--
+	            --><li><a href="research.html", id="f_res">Research</a></li><!--
+	            --><li><a href="people.html", id="f_peep">People</a></li><!--
+		    --><li><a href="publications.html", id="f_pub">Publications</a></li><!--
+	            --><li><a href="data+code.html", id="f_dc">Data+Code</a></li>		    
+                </ul>
+	    </nav>
+	</footer>
+
+    </body>
 </html>

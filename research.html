@@ -1,88 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research - Savoie Research Group</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Savoie Research Group</h1>
-            <p class="subtitle">Computational Chemistry & Materials Science</p>
-        </div>
-    </header>
+    <head>
+        <meta charset="utf-8">
+        <title>Savoie Research Group</title>
+        <link rel="stylesheet" href="assets/stylesheets/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+	<html style="--main_accent: var(--blue_accent)">
+    </head>
+    <body>
+        <header class="primary-header container group">
+            <h1><a href="index.html" class="logo">Savoie Research Group |</a></h1>
+            <h3 class="tagline">Purdue University</h3>
+	    <nav class="nav primary-nav">
+	        <ul>
+	            <li><a href="index.html", id="h_home">Home</a></li><!--
+	            --><li><a href="research.html", id="h_res">Research</a></li><!--
+	            --><li><a href="people.html", id="h_peep">People</a></li><!--
+		    --><li><a href="publications.html", id="h_pub">Publications</a></li><!--
+	            --><li><a href="data+code.html", id="h_dc">Data+Code</a></li>		    
+		</ul>
+	    </nav>
+        </header>	
+	<!-- Beginning of page content -->
+	<section class="row-alt", id="research_banner" >
+	    <div class="container hero">
+	        <h2>Research</h2>
+	        <p>Problem-Driven Computational Materials Research</p>
+	    </div>
+	</section>	
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html" class="active">Research</a></li>
-                <li><a href="people.html">People</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <main>
-        <div class="container">
-            <section>
-                <h2>Research</h2>
-                <p>Our research focuses on developing and applying computational methods to solve problems in chemistry and materials science. We combine quantum chemistry, molecular dynamics, and machine learning to understand chemical phenomena and design new materials.</p>
-            </section>
+	<section class="row">
 
-            <section>
-                <h3>Computational Chemistry</h3>
-                <div class="research-card">
-                    <h4>Quantum Mechanical Calculations</h4>
-                    <p>We develop and apply quantum chemical methods to study molecular structures, reaction mechanisms, and electronic properties. Our work includes density functional theory (DFT), coupled cluster methods, and beyond.</p>
-                </div>
-                <div class="research-card">
-                    <h4>Reaction Mechanism Discovery</h4>
-                    <p>Using automated computational workflows, we discover and characterize reaction pathways for complex chemical transformations. This work has applications in catalysis, organic synthesis, and atmospheric chemistry.</p>
-                </div>
-            </section>
+	  <div class="grid">
 
-            <section>
-                <h3>Machine Learning for Chemistry</h3>
-                <div class="research-card">
-                    <h4>Property Prediction</h4>
-                    <p>We develop machine learning models to predict molecular and materials properties. Our models enable rapid screening of chemical space and guide experimental efforts.</p>
-                </div>
-                <div class="research-card">
-                    <h4>Neural Network Potentials</h4>
-                    <p>We create machine learning potentials that enable molecular dynamics simulations with near-quantum mechanical accuracy at a fraction of the computational cost.</p>
-                </div>
-            </section>
+	    <section class="research_box">	    
+	      <div class="res_description">
+		<h2>Team Philosophy</h2>
+		<p>Our research is organized around the problems that you will find below. Our expertise lies in using computational methods to design and characterize organic molecules, materials, and reactions. A small team of students and postdocs works on each problem and the problems cycle over time as we generate new ideas, perceive a need, or conclude our studies. We use an array of methodologies and actively extend or invent new approaches as required by each problem. Combined with some of the best graduate students and postdocs on the planet, these ingredients create an extremely productive, cross-cutting, and creative research atmosphere. If you are interested in any of these problems, would like to collaborate with the group, or are interested in joining the group, please reach out to Brett. </p><!--
+	     --><h3>All the images on this page have been generated by the marvelous DALL-E text-to-image generation model. The associated prompts are shown the description of each problem.</h3><!--
+           --></div>
+	    </section>  
+	      
+	    <!-- Research box 1 -->
+	    <section class="research_box">
+	      <div class="col-1-3">
+  		<img src="assets/images/research/Degradation/composite.png" alt="degradation" width="360px" id="res1" style="margin:-25px 0 0 0" >
+	      </div><!--
+	      --><aside class="col-2-3">
+		  <div class="res_description">
+		    <h2>Predicting How Materials Degrade</h2>
+		    <p>Simulations play a crucial role in down-selecting and optimizing molecules and materials before more costly synthesis. However, the lacuna in the materials by design paradigm is that we still can’t predict the stability and degradation behaviors of otherwise promising materials. This results in a costly bottleneck where prospective materials must be empirically tested in make and break cycles and ultimately discarded at a late development stage if they do not meet requirements. Our group is developing computational methods that fill this gap to predict the degradation pathways, timescales, and products of prospective molecules and materials to various stressors.</p>
+		    <h5>Collaborators: Jianguo Mei (Purdue), Julia Laskin (Purdue), Olexandr Isayev (CMU), Geoffrey Hutchison (U. Pitt.)</h5>
+		    <h5>DALL-E Prompt: A Hieronymus Bosch style painting of molecules being chased off a cliff</h5>		    		    
+		  </div>
+	      </aside>
+	    </section>
 
-            <section>
-                <h3>Materials Design</h3>
-                <div class="research-card">
-                    <h4>Functional Materials</h4>
-                    <p>We design and optimize materials for specific applications including energy storage, catalysis, and electronic devices. Our computational screening methods accelerate materials discovery.</p>
-                </div>
-                <div class="research-card">
-                    <h4>Polymer Science</h4>
-                    <p>We study polymer properties and behavior using molecular simulations. This includes work on polymer electrolytes, degradation mechanisms, and structure-property relationships.</p>
-                </div>
-            </section>
+	    <!-- Research box 2 -->
+	    <section class="research_box">
+	      <div class="col-1-3">
+  		<img src="assets/images/research/Batteries/composite.png" alt="batteries" width="360px" id="res2" style="margin:0px 0 0 0" >		
+	      </div><!--
+	      --><aside class="col-2-3">
+		  <div class="res_description">
+		    <h2>Post Li-Ion Battery Electrolytes</h2>
+		    <p>Every battery consists of two electrodes and an electrolyte. Out of these components, the electrolyte is generally the limiting factor in terms of performance, charging time, battery life, and safety. The success of conventional Li-ion batteries is built on top of decades of electrolyte engineering that is non-transferable to other battery chemistries. Thus, there is a major need to develop optimized electrolytes for prospective battery chemistries (Li-metal, fluoride, sodium, etc.) without waiting on decades of optimization. Our approach to this problem is developing new computational methods that will enable design rules elucidation and screening to occur on an accelerated timescale. Among these are methods to perform the first molecular simulations of the electrochemical processes occurring at prospective electrolyte/electrode interfaces and methods for predicting electrolyte degradation networks.</p>
+		    <h5>Collaborators: Vilas Pol (Purdue)</h5>
+		    <h5>DALL-E Prompt: An expressive oil painting of molecules chained together on a plane with lightning above.</h5>
+		  </div>
+	      </aside>
+	    </section>
 
-            <section>
-                <h3>Software Development</h3>
-                <div class="research-card">
-                    <h4>Open Source Tools</h4>
-                    <p>We develop and maintain open-source software for the computational chemistry community. Our tools enable researchers to perform complex calculations and analyze results efficiently.</p>
-                </div>
-            </section>
-        </div>
-    </main>
+	    <!-- Research box 3 -->
+	    <section class="research_box">
+	      <div class="col-1-3">
+  		<img src="assets/images/research/Perovskites/composite.png" alt="perovskites" width="360px" id="res3" style="margin:-50px 0 0 0" >
+	      </div><!--
+	      --><aside class="col-2-3">
+		  <div class="res_description">
+		    <h2>Molecular Passivation of Perovskites</h2>
+		    <p>Perovskite solar cells are potentially revolutionary in terms of cost and efficiency but are limited by their relative instability. In collaboration with the Dou group, we are developing a generic passivation strategy that involves depositing a molecularly-thin organic layer on the perovskite surface that preserves its outstanding optoelectronic properties. Our unique approach to this problem involves high-throughput data generation to create the largest database simulated 2D-perovskite layers in existence, developing ML-based screening tools for prospective passivation chemistries, and using simulations to assay halide and moisture diffusion associated with perovskite degradation. These strategies are the basis for our ongoing translational work on providing perovskite solar cells that achieve a >20 year lifespan.</p>
+		    <h5>Collaborators: Letian Dou (Purdue)</h5>
+		    <h5>DALL-E Prompt: Futuristic devices being powered by the sun, digital art.</h5>		    		    
+		  </div>
+	      </aside>
+	    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Savoie Research Group. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
+	    <!-- Research box 4 -->
+	    <section class="research_box">
+	      <div class="col-1-3">
+  		<img src="assets/images/research/Depolymerization/composite.png" alt="depolymerization" width="360px" id="res4" style="margin:30px 0 0 0" >
+	      </div><!--
+	      --><aside class="col-2-3">
+		  <div class="res_description">
+		    <h2>Developing Plastics with Tailored Degradation Profiles</h2>
+		    <p>The accumulation of plastics in the environment is the result of a mismatch between the lifetime and use time of these materials. To address this issue, we are developing new plastics that depolymerize on command while maintaining the mechanical properties that have made commodity plastics so useful. Our unique approach for this is to introduce susceptibilities into the polymer backbone that make depolymerization facile under tailored conditions. In collaboration with the Dou group, we have developed several novel depolymerization strategies that are unique for being compatible with plastics based on C-C backbones. Using a combination of these strategies we envision developing drop-in replacements for commodity polyolefins that exhibit (i) better alignment between environmental half-life and application need, (ii) facile recyclability from mixed plastics streams, and (iii) precursor sourcing from existing waste streams.</p>
+		    <h5>Collaborators: Letian Dou (Purdue)</h5>
+		    <h5>DALL-E Prompt: A painting of plastics recycling in the mannerist style</h5>		    		    
+		  </div>
+	      </aside>
+	    </section>
+
+	    <!-- Research box 5 -->
+	    <section class="research_box">
+	      <div class="col-1-3">
+  		<img src="assets/images/research/Mixed_Conduction/composite.png" alt="mixed_conduction" width="360px" id="res5" style="margin:20px 0 0 0" >
+	      </div><!--
+	      --><aside class="col-2-3">
+		  <div class="res_description">
+		    <h2>Mixed Conduction in Soft Materials</h2>
+		    <p>Organic and hybrid organic/inorganic materials that exhibit both electronic and ionic conduction have disruptive potential for sensing and wearable electronics. Our group's work in this area is focused on designing new mixed conductors that exhibit the necessary stability and transference characteristics for end-use wearable applications. To date, extremely few materials have been developed for these applications due to the synthetic cost and incomplete understanding of how electrolyte media affect material morphology. To address this knowledge gap we are developing coarse-grained simulation models capable of characterizing mixed conduction in silico. In turn, this simulation data is forming the basis of novel generative machine learning models to identify new mixing conducting materials.</p> 
+		    <h5>Collaborators: Bryan Boudouris (Purdue), Jianguo Mei (Purdue)</h5>
+		    <h5>DALL-E Prompt: polymers in space, digital art</h5>		    		    
+		  </div>
+	      </aside>
+	    </section>
+
+	    <!-- Research box 6 -->
+	    <section class="research_box">
+	      <div class="col-1-3">
+  		<img src="assets/images/research/Reaction_Networks/composite.png" alt="reaction_networks" width="360px" id="res6" style="margin:30px 0 0 0" >
+	      </div><!--
+	      --><aside class="col-2-3">
+		  <div class="res_description">
+		    <h2>The Reaction Prediction Problem</h2>
+		    <p>The reaction prediction problem can be phrased as A&#8594?, where the task is predicting the products knowing only the reactants and conditions. The state-of-the-art for discovering new reactions is slow, hypothesis-driven, experimental testing by organic chemists. Solving this problem would make in silico reaction discovery possible and lead to a paradigm shift where novel reactions are discovered algorithmically then verified experimentally. Our approach for addressing this is to recognize that the A&#8594? problem can be rephrased as a search over A&#8594B problems. Provided that the latter can be solved in parallel and at low cost then reinforcement learning can be used to learn an optimal policy for generating useful A&#8594B subproblems. These strategies are the basis for our ongoing efforts to provide a generic solution to the reaction prediction problem.</p>
+		    <h5>Collaborators: Olexandr Isayev (CMU), Geoffrey Hutchison (U. Pitt.)</h5>
+		    <h5>DALL-E Prompt: crayon drawing of a large network with molecules on dark paper </h5>		    		    
+		  </div>
+	      </aside>
+	    </section>
+
+
+	    <!-- Research box 7 -->
+	    <section class="research_box">
+	      <div class="col-1-3">
+  		<img src="assets/images/research/Chemical_Deduction/composite.png" alt="reaction_networks" width="360px" id="res7" style="margin:20px 0 0 0" >
+	      </div><!--
+	      --><aside class="col-2-3">
+		  <div class="res_description">
+		    <h2>Machine Learning for Chemical Deduction Problems</h2>
+		    <p>Deduction is needed in underdetermined prediction scenarios or when there is a mixture of information sources. In contrast, the vast majority of ML in chemistry is inductive, learning from example, with a fixed set of features. Deductive bottlenecks face vast majority of proposals to automate chemical development workflows. For example, materials aging, soft materials property prediction, formulation development, and product identification all present information limitations that are typically filled by domain experts performing manual interpretation. Deductive ML models would fill such gaps and fundamentally expand the scope of ML in chemistry and materials research. Our approach for developing these models consists of combining task-specific inductive ML models within deductive super-networks and developing distinctive training protocols for deductive learning.</p>
+		    <h5>DALL-E Prompt: a sherlock holmes robot in a laboratory in the style of Michelangelo </h5>		    		    
+		  </div>
+	      </aside>
+	    </section>
+	    
+
+
+
+	    
+	  </div>
+	</section>
+
+
+	
+
+	<!-- End of page content -->
+	<footer class="primary-footer container group">
+            <small>&copy; Savoie Research Group, University of Notre Dame</small>
+	    <nav class="nav">
+	        <ul>
+	            <li><a href="index.html", id="f_home">Home</a></li><!--
+	            --><li><a href="research.html", id="f_res">Research</a></li><!--
+	            --><li><a href="people.html", id="f_peep">People</a></li><!--
+	            --><li><a href="publications.html", id="f_pub">Publications</a></li>
+                </ul>
+	    </nav>
+	</footer>
+
+    </body>
 </html>
